@@ -1,11 +1,11 @@
 from django.urls import path
-from .views import register, profile
 from django.contrib.auth.views import (LoginView,
                                        LogoutView,
                                        PasswordResetView,
                                        PasswordResetDoneView,
                                        PasswordResetConfirmView,
                                        PasswordResetCompleteView)
+from .views import register, profile
 from django.conf import settings
 from django.conf.urls.static import static
 

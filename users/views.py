@@ -1,8 +1,8 @@
-from django.shortcuts import render, redirect
-from django.contrib import messages
 from .forms import UserRegistrationForm, UpdateProfileForm, UserUpdateForm
 from django.contrib.auth.decorators import login_required
 from .models import Profile
+from django.shortcuts import render, redirect
+from django.contrib import messages
 
 
 def register(request):
